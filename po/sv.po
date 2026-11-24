@@ -1,0 +1,151 @@
+# Swedish translation for simmsb-shoppinglist.
+# This file is distributed under the same license as the simmsb-shoppinglist package.
+# Åke Engelbrektson <eson@svenskasprakfiler.se>, 2026.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: 2026-11-24 10:16+0100\n"
+"Last-Translator: Åke Engelbrektson <eson@svenskasprakfiler.se>\n"
+"Language-Team: Svenska Språkfiler\n"
+"Language: sv\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 3.10\n"
+
+#: qml/pages/AboutPage.qml:13
+msgid "A shopping list program with p2p sharing"
+msgstr "En inköpslista med p2p-delning"
+
+#: qml/pages/AboutPage.qml:27 qml/pages/DebugStatusPage.qml:33
+msgid "Debug"
+msgstr "Felsök"
+
+#: qml/pages/CoverPage.qml:16 qml/pages/HomePage.qml:24
+msgid "Shopping lists"
+msgstr "Inköpslistor"
+
+#: qml/pages/DebugStatusPage.qml:59
+msgid "Log"
+msgstr "Logg"
+
+#: qml/pages/HomePage.qml:12
+msgid "List deleted"
+msgstr "Listan borttagen"
+
+#: qml/pages/HomePage.qml:29
+msgid "About"
+msgstr "Om"
+
+#: qml/pages/HomePage.qml:33 qml/pages/ImportDialog.qml:17
+msgid "Import list"
+msgstr "Importera lista"
+
+#: qml/pages/HomePage.qml:37 qml/pages/HomePage.qml:117
+msgid "New list"
+msgstr "Ny lista"
+
+#: qml/pages/HomePage.qml:44
+msgid "No shopping lists"
+msgstr "Inga inköpslistor"
+
+#: qml/pages/HomePage.qml:45
+msgid "Pull down to create or import a list"
+msgstr "Dra neråt för att skapa eller importer en lista"
+
+#: qml/pages/HomePage.qml:93
+msgid "<unnamed list>"
+msgstr "<namnlös lista>"
+
+#: qml/pages/ImportDialog.qml:18
+msgid "Import"
+msgstr "Importera"
+
+#: qml/pages/ImportDialog.qml:25
+msgid "Shopping list link"
+msgstr "Länk till inköpslista"
+
+#: qml/pages/ImportDialog.qml:26
+msgid "Enter a link from another device"
+msgstr "Ange en länk från en annan enhet"
+
+#: qml/pages/SharePage.qml:21
+msgid "Share shoppinglist"
+msgstr "Dela inköpslista"
+
+#: qml/pages/SharePage.qml:42 qml/pages/SharePage.qml:89
+#: qml/pages/ShoppingListPage.qml:71
+msgid "Share"
+msgstr "Dela"
+
+#: qml/pages/SharePage.qml:48
+msgid "Share this list with someone. They'll be able to view and edit it."
+msgstr "Dela denna lista med någon. De kommer att kunna se och redigera den."
+
+#: qml/pages/SharePage.qml:100
+msgid "Copied"
+msgstr "Kopierat"
+
+#: qml/pages/SharePage.qml:100
+msgid "Copy link"
+msgstr "Kopiera länk"
+
+#: qml/pages/ShoppingListPage.qml:26
+msgid "Edit item"
+msgstr "Redigera vara"
+
+#: qml/pages/ShoppingListPage.qml:36
+msgid "Rename list"
+msgstr "Byt namn på listan"
+
+#: qml/pages/ShoppingListPage.qml:57
+msgid "Delete list"
+msgstr "Ta bort lista"
+
+#: qml/pages/ShoppingListPage.qml:61
+msgid "Clear completed"
+msgstr "Ta bort köpta"
+
+#: qml/pages/ShoppingListPage.qml:65
+msgid "Cleared completed items"
+msgstr "Tog bort köpta varor"
+
+#: qml/pages/ShoppingListPage.qml:75
+msgid "Rename"
+msgstr "Byt namn"
+
+#: qml/pages/ShoppingListPage.qml:96
+msgid "No items yet"
+msgstr "Inga varor ännu"
+
+#: qml/pages/ShoppingListPage.qml:129 qml/pages/ShoppingListPage.qml:206
+msgid "Edit"
+msgstr "Redigera"
+
+#: qml/pages/ShoppingListPage.qml:133 qml/pages/ShoppingListPage.qml:210
+msgid "Delete"
+msgstr "Ta bort"
+
+#: qml/pages/ShoppingListPage.qml:140 qml/pages/ShoppingListPage.qml:217
+msgid "Deleted"
+msgstr "Borttaget"
+
+#: qml/pages/ShoppingListPage.qml:146 qml/pages/ShoppingListPage.qml:223
+msgid "Added: %1"
+msgstr "Lade till: %1"
+
+#: qml/pages/ShoppingListPage.qml:166 qml/pages/ShoppingListPage.qml:167
+msgid "New item"
+msgstr "Ny vara"
+
+#: qml/pages/ShoppingListPage.qml:185
+msgid "Completed"
+msgstr "Köpt"
+
+#: qml/pages/ShoppingListPage.qml:226
+msgid "Completed: %1"
+msgstr "Köpt: %1"
