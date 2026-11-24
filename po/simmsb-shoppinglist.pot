@@ -24,40 +24,44 @@ msgstr ""
 msgid "Debug"
 msgstr ""
 
-#: qml/pages/CoverPage.qml:16 qml/pages/HomePage.qml:24
-msgid "Shopping lists"
-msgstr ""
-
 #: qml/pages/DebugStatusPage.qml:59
 msgid "Log"
 msgstr ""
 
-#: qml/pages/HomePage.qml:12
-msgid "List deleted"
+#: qml/pages/HomePage.qml:17
+msgid "Shopping lists"
 msgstr ""
 
-#: qml/pages/HomePage.qml:29
+#: qml/pages/HomePage.qml:22
 msgid "About"
 msgstr ""
 
-#: qml/pages/HomePage.qml:33 qml/pages/ImportDialog.qml:17
+#: qml/pages/HomePage.qml:26 qml/pages/ImportDialog.qml:17
 msgid "Import list"
 msgstr ""
 
-#: qml/pages/HomePage.qml:37 qml/pages/HomePage.qml:117
+#: qml/pages/HomePage.qml:30
 msgid "New list"
 msgstr ""
 
-#: qml/pages/HomePage.qml:44
+#: qml/pages/HomePage.qml:37
 msgid "No shopping lists"
 msgstr ""
 
-#: qml/pages/HomePage.qml:45
+#: qml/pages/HomePage.qml:38
 msgid "Pull down to create or import a list"
 msgstr ""
 
-#: qml/pages/HomePage.qml:93
+#: qml/pages/HomePage.qml:82
 msgid "<unnamed list>"
+msgstr ""
+
+#: qml/pages/HomePage.qml:105
+msgid "List deleted"
+msgstr ""
+
+#: qml/pages/HomePage.qml:120
+msgid "Set list name"
 msgstr ""
 
 #: qml/pages/ImportDialog.qml:18
@@ -77,7 +81,7 @@ msgid "Share shoppinglist"
 msgstr ""
 
 #: qml/pages/SharePage.qml:42 qml/pages/SharePage.qml:89
-#: qml/pages/ShoppingListPage.qml:71
+#: qml/pages/ShoppingListPage.qml:73
 msgid "Share"
 msgstr ""
 
@@ -94,57 +98,57 @@ msgid "Copy link"
 msgstr ""
 
 #: qml/pages/ShoppingListPage.qml:26
-msgid "Edit item"
+msgid "Editing item"
 msgstr ""
 
-#: qml/pages/ShoppingListPage.qml:36
-msgid "Rename list"
+#: qml/pages/ShoppingListPage.qml:37
+msgid "Renaming list"
 msgstr ""
 
-#: qml/pages/ShoppingListPage.qml:57
+#: qml/pages/ShoppingListPage.qml:59
 msgid "Delete list"
 msgstr ""
 
-#: qml/pages/ShoppingListPage.qml:61
+#: qml/pages/ShoppingListPage.qml:63
 msgid "Clear completed"
 msgstr ""
 
-#: qml/pages/ShoppingListPage.qml:65
+#: qml/pages/ShoppingListPage.qml:67
 msgid "Cleared completed items"
 msgstr ""
 
-#: qml/pages/ShoppingListPage.qml:75
+#: qml/pages/ShoppingListPage.qml:77
 msgid "Rename"
 msgstr ""
 
-#: qml/pages/ShoppingListPage.qml:96
+#: qml/pages/ShoppingListPage.qml:98
 msgid "No items yet"
 msgstr ""
 
-#: qml/pages/ShoppingListPage.qml:129 qml/pages/ShoppingListPage.qml:206
+#: qml/pages/ShoppingListPage.qml:131 qml/pages/ShoppingListPage.qml:208
 msgid "Edit"
 msgstr ""
 
-#: qml/pages/ShoppingListPage.qml:133 qml/pages/ShoppingListPage.qml:210
+#: qml/pages/ShoppingListPage.qml:135 qml/pages/ShoppingListPage.qml:212
 msgid "Delete"
 msgstr ""
 
-#: qml/pages/ShoppingListPage.qml:140 qml/pages/ShoppingListPage.qml:217
+#: qml/pages/ShoppingListPage.qml:142 qml/pages/ShoppingListPage.qml:219
 msgid "Deleted"
 msgstr ""
 
-#: qml/pages/ShoppingListPage.qml:146 qml/pages/ShoppingListPage.qml:223
+#: qml/pages/ShoppingListPage.qml:148 qml/pages/ShoppingListPage.qml:225
 msgid "Added: %1"
 msgstr ""
 
-#: qml/pages/ShoppingListPage.qml:166 qml/pages/ShoppingListPage.qml:167
+#: qml/pages/ShoppingListPage.qml:168 qml/pages/ShoppingListPage.qml:169
 msgid "New item"
 msgstr ""
 
-#: qml/pages/ShoppingListPage.qml:185
+#: qml/pages/ShoppingListPage.qml:187
 msgid "Completed"
 msgstr ""
 
-#: qml/pages/ShoppingListPage.qml:226
+#: qml/pages/ShoppingListPage.qml:228
 msgid "Completed: %1"
 msgstr ""

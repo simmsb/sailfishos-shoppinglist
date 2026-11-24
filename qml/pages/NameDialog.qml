@@ -6,6 +6,8 @@ Dialog {
 
     property string titleText
     property string initialText
+    property string label
+
     signal nameAccepted(string name)
 
     allowedOrientations: defaultAllowedOrientations
@@ -22,7 +24,8 @@ Dialog {
         TextField {
             id: field
             width: parent.width
-            placeholderText: root.titleText
+            label: root.label
+
             EnterKey.enabled: root.canAccept
             EnterKey.iconSource: "image://theme/icon-m-enter-accept"
             EnterKey.onClicked: root.accept()

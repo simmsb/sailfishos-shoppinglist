@@ -23,8 +23,9 @@ Page {
 
     function editItem(itemId, itemName) {
         var dialog = pageStack.push(Qt.resolvedUrl("NameDialog.qml"), {
-            "titleText": Tr.tr("Edit item"),
-            "initialText": itemName
+            "titleText": Tr.tr("Editing item"),
+            "initialText": itemName,
+            "label": "New item value"
         })
         dialog.nameAccepted.connect(function(name) {
             shoppingListModel.renameItem(itemId, name)
@@ -33,8 +34,9 @@ Page {
 
     function renameThisShoppingList() {
         var dialog = pageStack.push(Qt.resolvedUrl("NameDialog.qml"), {
-            "titleText": Tr.tr("Rename list"),
-            "initialText": shoppingListModel.name
+            "titleText": Tr.tr("Renaming list"),
+            "initialText": shoppingListModel.name,
+            "label": "New list name"
         })
         dialog.nameAccepted.connect(function(name) {
             shoppingListModel.renameShoppingList(name)

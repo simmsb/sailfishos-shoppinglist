@@ -11,11 +11,6 @@ CoverBackground {
 
     property var shoppingLists
 
-    ViewPlaceholder {
-        enabled: shoppingLists && shoppingLists.items.count === 0
-        text: Tr.tr("Shopping lists")
-    }
-
     D.DelegateColumn {
         model: shoppingLists ? shoppingLists.items : null
 

@@ -8,13 +8,6 @@ Page {
     property var shoppingLists
     allowedOrientations: defaultAllowedOrientations
 
-    function deleteList(shoppingListId) {
-        var message = Tr.tr("List deleted")
-        remorse.execute(message, function() {
-            shoppingLists.removeShoppingList(shoppingListId)
-        })
-    }
-
     SilicaListView {
         id: view
         anchors.fill: parent
@@ -51,11 +44,7 @@ Page {
             width: view.width
 
             onClicked: {
-                var id = shoppingListId
-                pageStack.push(Qt.resolvedUrl("ShoppingListPage.qml"), {
-                    "shoppingListId": id,
-                    "homePage": page,
-                })
+                page.openShoppingList(shoppingListId)
             }
 
             Column {
@@ -112,10 +101,25 @@ Page {
         id: remorse
     }
 
+    function deleteList(shoppingListId) {
+        var message = Tr.tr("List deleted")
+        remorse.execute(message, function() {
+            shoppingLists.removeShoppingList(shoppingListId)
+        })
+    }
+
+    function openShoppingList(shoppingListId) {
+        pageStack.push(Qt.resolvedUrl("ShoppingListPage.qml"), {
+            "shoppingListId": shoppingListId,
+            "homePage": page,
+        })
+    }
+
     function createShoppingList() {
         var dialog = pageStack.push(Qt.resolvedUrl("NameDialog.qml"), {
-            "titleText": Tr.tr("New list"),
-            "initialText": ""
+            "titleText": Tr.tr("Set list name"),
+            "initialText": "",
+            "label": "Name"
         })
         dialog.nameAccepted.connect(function(name) {
             shoppingLists.createShoppingList(name)

@@ -8,10 +8,16 @@ import "pages"
 ApplicationWindow {
     id: window
 
+    property Item homePageInstance: null
+    property var pendingStackAction: null
+
     allowedOrientations: defaultAllowedOrientations
     initialPage: Component {
         HomePage {
+            id: homePage
             shoppingLists: shoppingListsModel
+
+            Component.onCompleted: window.homePageInstance = homePage
         }
     }
 
@@ -28,6 +34,17 @@ ApplicationWindow {
         onReadyChanged: window.importLaunchLink()
     }
 
+    Connections {
+        target: pageStack
+        onBusyChanged: {
+            if (!pageStack.busy && window.pendingStackAction) {
+                var action = window.pendingStackAction
+                window.pendingStackAction = null
+                action()
+            }
+        }
+    }
+
     // This is a bit funky. If the app is launched with a share url, we store
     // the url in the Qt UI to then invoke the same `importLink` method that the
     // dbus interface uses.
@@ -42,9 +59,21 @@ ApplicationWindow {
     }
 
     function openShoppingList(shoppingListId) {
-        pageStack.push(Qt.resolvedUrl("pages/ShoppingListPage.qml"), {
-            "shoppingListId": shoppingListId,
+        // This can be called when we're in the middle of transitioning from the finished dialog.
+        window.maybeDeferredPageStackAction(function() {
+            pageStack.push(Qt.resolvedUrl("pages/ShoppingListPage.qml"), {
+                "shoppingListId": shoppingListId,
+                "homePage": window.homePageInstance
+            })
         })
+    }
+
+    function maybeDeferredPageStackAction(action) {
+        if (pageStack.busy) {
+            window.pendingStackAction = action
+        } else {
+            action()
+        }
     }
 
     DBusAdaptor {
