@@ -87,8 +87,7 @@ msgstr "Teilen"
 
 #: qml/pages/SharePage.qml:48
 msgid "Share this list with someone. They'll be able to view and edit it."
-msgstr ""
-"Teile diese Liste mit jemandem. Die Person kann sie anschauen und ändern."
+msgstr "Teile diese Liste mit jemandem. Die Person kann sie anschauen und ändern."
 
 #: qml/pages/SharePage.qml:100
 msgid "Copied"
@@ -99,14 +98,12 @@ msgid "Copy link"
 msgstr "Link kopieren"
 
 #: qml/pages/ShoppingListPage.qml:26
-#, fuzzy
 msgid "Editing item"
-msgstr "Eintrag ändern"
+msgstr ""
 
 #: qml/pages/ShoppingListPage.qml:37
-#, fuzzy
 msgid "Renaming list"
-msgstr "Liste umbenennen"
+msgstr ""
 
 #: qml/pages/ShoppingListPage.qml:59
 msgid "Delete list"
