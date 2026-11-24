@@ -378,28 +378,26 @@ impl ShoppingListModel {
         let names = names.to_string();
         let names = names
             .trim()
-            .lines()
-            // Reverse then names, we add each one to the top of the list.
-            .rev();
+            .lines();
 
-        let mut index_to_place_above = self.incomplete_items.first().map(|item| item.index.index());
+        let mut index_to_place_below = self.incomplete_items.last().map(|item| item.index.index());
 
         for name in names {
             // I think this is helpful?
             let name = name.trim().trim_prefix("- ").trim_prefix("+ ").trim();
             tracing::debug!("Adding item: {name}");
 
-            let index = index_to_place_above
+            let index = index_to_place_below
                 .map(|index| {
                     Fracindex::builder()
                         .jitter()
-                        .before(&index)
+                        .after(&index)
                         .build()
                         .expect("Building fractional index failed, should be impossible")
                 })
                 .unwrap_or_else(|| Fracindex::default());
 
-            index_to_place_above = Some(index.clone());
+            index_to_place_below = Some(index.clone());
 
             // TODO: Decide when to rebalance the fractional indexes?
 
